@@ -11,17 +11,17 @@ var server = http.createServer(function (req, res) {   //create web server
         res.end();
     
     }
-    else if (req.url == "/student") {
+    else if (req.url == "/mahi") {
         
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is student Page.</p></body></html>');
+        res.write('<html><body bgcolor="blue"><h2>MAHI IS THE BEST</h2></body></html>');
         res.end();
     
     }
     else if (req.url == "/admin") {
         
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is admin Page.</p></body></html>');
+        res.write('<html><body><h2>This is admin Page.</h2></body></html>');
         res.end();
     
     }
